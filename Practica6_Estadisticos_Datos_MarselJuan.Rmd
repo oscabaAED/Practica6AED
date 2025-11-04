@@ -88,8 +88,10 @@ Comentarios  |  Campo de texto libre para incluir comentarios que consideres sob
    * Usando `mutate(across())` (junto con `ends_with` y `as.factor`).
 
 ```{r Solucion_Ej1, include=TRUE, echo=TRUE, eval=TRUE, results=TRUE}
+Datos <- read_tsv("./data/NosAutoanalizamos_TD2019 - Hoja 1 - Clean.tsv")
 
-
+Datos <- Datos %>% 
+  mutate(across(ends_with(".cat"), ~as.factor(.)))
 ```
 
 ## Ejercicio 2: Inspección visual
