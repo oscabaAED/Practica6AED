@@ -99,7 +99,7 @@ Datos <- Datos %>%
 Inspecciona visualmente los valores del conjunto de datos (`View`) y ordena de mayor a menor y de menor a mayor cada variable.
 
 ```{r Solucion_Ej2, include=TRUE, echo=TRUE, eval=TRUE, results=TRUE}
-
+View(Datos)
 ```
 
 # Análisis univariante de variables numéricas
